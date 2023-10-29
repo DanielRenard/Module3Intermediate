@@ -78,4 +78,4 @@ function findMatchingAnimals (beginsWith) {
 }
 
 findMatchingAnimals('T')
-// [ 'T-Rex', 'Tiger' ]
+// [ 'T-Rex,Tiger,toads' ]
