@@ -69,13 +69,9 @@ function findMatchingAnimals (beginsWith) {
     animals.push('toads');
     const firstArray = animals.filter((animal) => animal.startsWith(beginsWith));
     const secondArray = animals.filter((animal) => animal.startsWith(beginsWith.toLowerCase()));
-    toString(firstArray, secondArray);
-    let newArray = []; 
-    newArray.push(firstArray + ',' + secondArray);
-    // newArray = firstArray + ',' + secondArray;
-    
-    console.log(newArray);
+    let newArray = firstArray.concat(secondArray);   
+    return newArray;
 }
 
-findMatchingAnimals('T')
-// [ 'T-Rex,Tiger,toads' ]
+console.log(findMatchingAnimals('T'))
+//[ 'T-Rex', 'Tiger', 'toads' ]
