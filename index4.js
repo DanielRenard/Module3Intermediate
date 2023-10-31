@@ -15,6 +15,16 @@
 //combine the two strings
 //else return string
 
+// function camelCase(cssProp) {
+//     // splits = cssProp.indexOf('-');
+//     // string1 = cssProp.slice(0, splits);
+//     // string2 = cssProp.slice(splits + 1);
+//     // newString = string1 + string2;
+//     // return newString
+// }
+//doesn't work when a string is w/o "-"
+
+
 function camelCase(cssProp) {
     if (cssProp.includes('-')) {
         let newString = cssProp.split('-');
@@ -29,5 +39,5 @@ console.log(camelCase('background-image')) // backgroundImage
 console.log(camelCase('display')) // display
 
 //b) Create variants of the camelCase function that 
-//use different types of for loops, and 
+//use different types of "for" loops, and 
 //c) with and without the conditional operator.
