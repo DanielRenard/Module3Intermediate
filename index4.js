@@ -53,26 +53,26 @@ console.log(camelCaseA('skittles')) // skittles
 //b) Create variants of the camelCase function that 
 //use different types of "for" loops, and 
 
-function forLoopEx (cssProp) {
-   myArray = ['a',  'b', 'c']
-   for (let i = 0; i < myArray.length; i = i + 1){
-    console.log(i); console.log(myArray[i])
-   }
-   console.log('-----')  
+// function forLoopEx (cssProp) {
+//    myArray = ['a',  'b', 'c']
+//    for (let i = 0; i < myArray.length; i = i + 1){
+//     console.log(i); console.log(myArray[i])
+//    }
+//    console.log('-----')  
 
-   for (index in myArray){
-    console.log(index); console.log(myArray[index])
-   }
-   console.log('-----')  
-   let myString = ''
-   myArray.forEach(function(item){
-    myString = myString + item
-   })
-   console.log(myString)
-}
+//    for (index in myArray){
+//     console.log(index); console.log(myArray[index])
+//    }
+//    console.log('-----')  
+//    let myString = ''
+//    myArray.forEach(function(item){
+//     myString = myString + item
+//    })
+//    console.log(myString)
+// }
 
-console.log('------for loop example')
-console.log(forLoopEx())
+// console.log('------for loop example')
+// console.log(forLoopEx())
 
 function camelCaseB(cssProp) {
     let wordsArray = cssProp.split('-');
