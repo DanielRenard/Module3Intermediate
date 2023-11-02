@@ -33,3 +33,4 @@ function daysInBetween(date1, date2) {
 }
 
 console.log(daysInBetween(new Date (1991, 11, 27), new Date (2023, 11, 27)))
+/11688
